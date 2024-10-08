@@ -1,0 +1,12 @@
+<div class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-10 rounded-lg shadow-lg text-center">
+    <h1 class="text-4xl font-bold mb-6">Game of Drones</h1>
+    <div class="mb-4">
+      <input type="text" id="player1" placeholder="Nombre del jugador 1" class="border p-2 rounded w-full" [ngClass]="{'border-red-500': !player1Valid}">
+    </div>
+    <div class="mb-4">
+      <input type="text" id="player2" placeholder="Nombre del jugador 2" class="border p-2 rounded w-full" [ngClass]="{'border-red-500': !player2Valid}">
+    </div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded" (click)="startGame()">Comenzar Juego</button>
+  </div>
+</div>
